@@ -41,7 +41,7 @@ nav {
   float: left; /* fl */
   /* fz120% */
   font-weight: bold; /* fwb */
-  padding: 1.5em 0.5; /* p1em */
+  padding: 1.5em 0.5em; /* p1em */
   width: 160px; /* w160 */
 }
 
