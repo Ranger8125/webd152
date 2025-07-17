@@ -19,8 +19,6 @@ header {
   background-size: contain; /* bgz */
   color: #fff; /* c#fff */
   padding: 0.5em auto;
-  /* height: 120px; h60 */
-  /* padding-top: 30px; pt15 */
   text-align: center; /* tac */
 }
 header a {
@@ -192,7 +190,7 @@ footer {
   }
   td::before {
     position: absolute; /* pos:a */
-   top: 6px; /* top6px */
+   top: 10px; /* top6px */
     left: 1.5em; /* left1.5em */
     color: #1976d2; /* c#1976d2 */
   }
