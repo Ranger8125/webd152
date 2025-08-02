@@ -1,0 +1,150 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #eaf4f4;
+  color: #2e3d49;
+  line-height: 1.6;
+}
+
+#wrapper {
+  display: flex;
+}
+
+/* Navigation Sidebar */
+nav {
+  width: 200px;
+  background-color: #c9e4de;
+  padding: 1rem;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+nav .logo {
+  width: 200px;
+  margin-bottom: 0.5rem;
+}
+
+nav h1 {
+  font-size: 1.2rem;
+  color: #070707;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 1rem 0;
+}
+
+nav ul li a {
+  color: #070808;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content wrapper */
+main {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero Image */
+.hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Flex layout for side-by-side sections */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main-col {
+  flex: 2;
+  min-width: 250px;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Image & video styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.sidebar img {
+  max-width: 250px;
+  margin: 1rem auto;
+}
+
+.visit-us img,
+.team img,
+.see-you img {
+  max-width: 400px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.video-content {
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Beliefs list */
+.beliefs ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.beliefs ul li {
+  background-color: #e0f7f1;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  border-left: 5px solid #002171;
+}
+/* Feather icon styling inside beliefs list */
+.beliefs li i {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+  stroke-width: 2;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
