@@ -17,11 +17,16 @@ nav {
   padding: 1rem;
   box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav .logo {
   width: 200px;
   margin-bottom: 0.5rem;
+  display: block;
+  order: -1;
 }
 
 nav h1 {
@@ -34,117 +39,227 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 nav ul li {
   margin: 1rem 0;
+  width: 100%;
 }
 
 nav ul li a {
   color: #070808;
   text-decoration: none;
   font-weight: bold;
+  display: block;
+  width: 100%;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 600px) {
+  #wrapper {
+    flex-direction: column;
+    /* stack nav and mainvertically */
+  }
+  nav {
+    width: 100%;
+    box-shadow: none;
+    padding: 1rem 0.5em;
+    align-items: center;
+  }
+
+  nav .logo {
+    width: 80%;
+    /* Responsive logo width */
+    max-width: 180px;
+    /* Max logo width */
+    margin: 0 auto 10px auto;
+    /* Center logo, space below */
+    order: -1;
+    /* Logo always on top */
+  }
+
+  nav h1 {
+    margin-top: 0;
+    /* Remove top margin */
+    margin-bottom: 10px;
+    /* Space below heading */
+  }
+
+  nav ul {
+    flex-direction: column;
+    /* Stack links vertically */
+    align-items: center;
+    /* Center links */
+    padding-left: 0;
+    /* Remove left padding */
+    width: 100%;
+    /* Full width */
+  }
+
+  nav ul li {
+    display: block;
+    /* Block-level for stacking */
+    width: 100%;
+    /* Full width */
+    margin: 0.5em 0;
+    /* Less vertical space */
+  }
+}
+
 /* Main content wrapper */
 main {
   flex-grow: 1;
+  /* Take remaining space */
   background-color: #ffffff;
+  /* White background */
   padding: 2rem;
+  /* Padding around content */
 }
 
 .content-wrapper {
   max-width: 1000px;
+  /* Limit content width */
   margin: 0 auto;
+  /* Center content */
   padding: 0 1rem;
+  /* Side padding */
 }
 
 /* Hero Image */
 .hero-img {
   width: 100%;
+  /* Full width */
   max-height: 400px;
+  /* Limit height */
   object-fit: cover;
+  /* Crop image if needed */
   border-radius: 8px;
+  /* Rounded corners */
   margin-bottom: 2rem;
+  /* Space below image */
 }
 
 /* Flex layout for side-by-side sections */
 .flex-container {
   display: flex;
+  /* Flex for columns */
   flex-wrap: wrap;
+  /* Wrap on small screens */
   gap: 2rem;
+  /* Gap between columns */
   margin-bottom: 2rem;
+  /* Space below */
 }
 
 .main-col {
   flex: 2;
+  /* Main column takes more space */
   min-width: 250px;
+  /* Minimum width */
 }
 
 .sidebar {
   flex: 1;
+  /* Sidebar takes less space */
   min-width: 200px;
+  /* Minimum width */
 }
 
 /* Image & video styles */
 img {
   max-width: 100%;
+  /* Responsive images */
   height: auto;
+  /* Maintain aspect ratio */
   display: block;
+  /* Block-level */
   border-radius: 8px;
+  /* Rounded corners */
 }
 
 .sidebar img {
   max-width: 250px;
+  /* Limit sidebar image width */
   margin: 1rem auto;
+  /* Center and space */
 }
 
 .visit-us img,
 .team img,
 .see-you img {
   max-width: 400px;
+  /* Limit image width */
   margin: 1rem auto;
+  /* Center and space */
   display: block;
+  /* Block-level */
 }
 
 .video-content {
   width: 100%;
+  /* Full width */
   max-width: 400px;
+  /* Limit video width */
   margin: 1rem auto;
+  /* Center and space */
   border-radius: 8px;
+  /* Rounded corners */
   display: block;
+  /* Block-level */
 }
 
 /* Beliefs list */
 .beliefs ul {
   list-style-type: none;
+  /* No bullets */
   padding-left: 0;
+  /* Remove left padding */
 }
 
 .beliefs ul li {
   background-color: #e0f7f1;
+  /* Light green background */
   margin-bottom: 0.5rem;
+  /* Space below */
   padding: 0.75rem 1rem;
+  /* Padding */
   border-radius: 6px;
+  /* Rounded corners */
   font-weight: 500;
+  /* Medium bold */
   border-left: 5px solid #002171;
+  /* Blue left border */
 }
+
 /* Feather icon styling inside beliefs list */
 .beliefs li i {
   width: 20px;
+  /* Icon width */
   height: 20px;
+  /* Icon height */
   vertical-align: middle;
+  /* Align with text */
   margin-right: 8px;
+  /* Space after icon */
   stroke-width: 2;
+  /* Icon stroke width */
 }
+
 /* Footer */
 footer {
   text-align: center;
+  /* Center text */
   padding-top: 2rem;
+  /* Space above */
   font-size: 0.9rem;
+  /* Smaller text */
   color: #555;
+  /* Gray text */
 }
